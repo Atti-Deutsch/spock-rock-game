@@ -1,7 +1,7 @@
 // Confetti.js downloaded from https://www.cssscript.com/confetti-falling-animation/
 
 var confetti = {
-	maxCount: 150,		//set max confetti count
+	maxCount: 300,		//set max confetti count
 	speed: 2,			//set the particle animation speed
 	frameInterval: 15,	//the confetti animation frame interval in milliseconds
 	alpha: 1.0,			//the alpha opacity of the confetti (between 0 and 1, where 1 is opaque and 0 is invisible)
@@ -16,7 +16,6 @@ var confetti = {
 	isPaused: null,		//call and returns true or false depending on whether the confetti animation is paused
 	isRunning: null		//call and returns true or false depending on whether the animation is running
 };
-
 
 confetti.start = startConfetti;
 confetti.stop = stopConfetti;
@@ -213,3 +212,4 @@ function updateParticles() {
 	}
 }
 
+export { startConfetti, stopConfetti, removeConfetti};
